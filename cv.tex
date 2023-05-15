@@ -1,0 +1,206 @@
+%! TEX program = xelatex
+\documentclass[a4paper,10pt]{article}
+\usepackage{hyperref}
+\usepackage{marvosym}
+\usepackage{caption}
+\usepackage{fontspec}
+\usepackage{xunicode,xltxtra,url,parskip}
+\usepackage{verbatim}
+\usepackage{fontawesome}
+\RequirePackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[big]{layaureo}
+\usepackage{supertabular}
+\usepackage{titlesec}
+\usepackage{hyperref} \hypersetup{linkcolor=}
+\usepackage{booktabs,tabularx}
+\usepackage{titlesec}
+\usepackage{float}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont[
+SmallCapsFont = Fontin-SmallCaps.otf,
+BoldFont = Fontin-Bold.otf,
+ItalicFont = Fontin-Italic.otf
+]
+{Fontin.otf}
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{2pt}{1pt}
+\hyphenation{im-pre-se}
+\geometry{letterpaper, portrait, margin=.5in}
+\def\cquad{\hskip0.3em\relax}
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
+
+\newcommand{\linkbox}[1]{\scriptsize{\textsc{[#1]}}}
+\newcommand{\link}[2]{\href{#1}{\faPaperclip \ #2}}
+
+\begin{document}
+
+\vspace*{-1.7cm}
+
+\titlespacing{\section}{0pt}{2mm}{2mm}
+\pagestyle{empty} % non-numbered pages
+
+\font\fb=''[cmr10]'' %for use with \LaTeX command
+
+
+\bigskip
+\centering
+		{\Huge Carter \textsc{Blum}
+	}\bigskip
+\begin{center}
+carter.wood.blum@gmail.com --- (+1) 612-986-5670 --- New York City, NY, USA\\
+\link{https://blumx116.github.io}{Personal Webpage} --- \link{https://github.com/blumx116}{GitHub Profile} --- \link{https://www.linkedin.com/in/carter-blum/}{LinkedIn Profile}
+%\vspace{5mm}
+\end{center}
+%\end{comment}
+
+\section{Industry Experience}
+\begin{tabularx}{\textwidth}{r|Xr}
+
+\emph{Current} &  Sr. Machine Learning Research Engineer & \emph{Bloomberg L.P.} -- New York\\
+
+\rule{0pt}{1ex} \textsc{2021 - 2023} 
+
+&\multicolumn{2}{l}{
+		\footnotesize{\underline{\textbf{Large Language Models}}}
+}\\
+
+
+
+&\multicolumn{2}{l}{
+		\footnotesize{$\bullet$ Designed \& ran distributed data parallel finetuning of BloombergGPT (10+ Billion params), improving $F_1$ score by 20\%.}
+}\\
+
+&\multicolumn{2}{l}{
+		\footnotesize{$\bullet$ Reduced labeled data needed to train production BERT-class models by >85\% by leveraging LLMs, saving months of annotation effort.}
+}\\
+
+&\multicolumn{2}{l}{
+		\footnotesize{$\bullet$ Rapidly proposed \& built prototypes for summarization, QA \& more using augmented LLMs (e.g. BloombergGPT).}
+}\\
+
+
+&\multicolumn{2}{l}{
+		\footnotesize{\underline{\textbf{Explaining Large Models}}}
+}\\
+
+&\multicolumn{2}{l}{
+		\footnotesize{$\bullet$ Built tooling for identifying hallucination in LLMs, reducing non-factual generations by >40\% in demos.}
+}\\
+
+&\multicolumn{2}{l}{
+		\footnotesize{$\bullet$ Developed transparency visualization for deep multimodal models, enabling identification of cause for >50\% test errors.}
+}\\
+
+&\multicolumn{2}{l}{
+		\footnotesize{\underline{\textbf{Design \& Deployment of Production Pipelines}}}
+}\\
+
+&\multicolumn{2}{l}{
+		\footnotesize{$\bullet$ Doubled number of summaries produced by production news pipeline by leveraging BERTQA to boost recall.}
+}\\
+
+&\multicolumn{2}{l}{
+		\footnotesize{$\bullet$ Collaborated to design, build, deploy \& monitor new pipelines for news summarization with less than 300ms of latency.}
+}\\
+
+&\multicolumn{2}{l}{
+		\footnotesize{\underline{\textbf{Infrastructure Advancements}}}
+}\\
+
+&\multicolumn{2}{l}{
+		\footnotesize{$\bullet$ Led task force designing \& unifying sampling + ETL tooling \& methods across all AI News + Content teams. }
+}\\
+
+&\multicolumn{2}{l}{
+		\footnotesize{$\bullet$ Created popular library for leveraging LLMs in zero \& few-shot settings.}
+}\\
+
+&\multicolumn{2}{l}{
+		\footnotesize{$\bullet$ Redesigned \& iteratively revamped core C++ routing \& pipeline service generating 1000s of stories daily.}
+}\\
+
+&\multicolumn{2}{l}{
+		\footnotesize{$\bullet$ Organized \& led talks teaching coding best practices, along with ML reading groups.}
+}
+
+\multicolumn{2}{c}{} \\
+
+\textsc{2019} &  AI Research Intern \linkbox{\link{https://github.com/blumx116/Chargers}{Code}, \link{https://blumx116.github.io/assets/pdfs/CoordiQ.pdf}{PDF}} & \emph{Baidu Inc.} -- Beijing\\
+\rule{0pt}{1ex} & \multicolumn{2}{l}{
+    \footnotesize{$\bullet$ Developed lightweight, distributable improvements for electric vehicle (EV) charging station recommendation system.}}\\
+    
+&\multicolumn{2}{l}{
+    \footnotesize{$\bullet$ Innovated reinforcement learning model leveraging DQNs + GraphSage, cutting estimated reducible wait time by 72\%.}}\\
+
+\multicolumn{2}{c}{} \\
+
+\textsc{2017} & Data Science Intern &  \emph{Honeywell Inc.} -- Minnesota\\
+\rule{0pt}{1ex}  &\multicolumn{2}{l}{
+    \footnotesize{$\bullet$ Devised algorithm using OCR to parse real images of tables to standardized database entries, with over 90\% recall.}}\\
+\multicolumn{2}{c}{} \\
+ 
+ 
+ \textsc{2015 - 2016} &  Head of Mobile Development \linkbox{\link{https://play.google.com/store/apps/details?id=com.foodsby.consumerApp&hl=en_US&gl=US}{Android}, \link{https://apps.apple.com/us/app/foodsby-local-food-delivery/id875062433}{iOS}} &\emph{Foodsby L.L.C. (Startup)} -- Minnesota\\
+\rule{0pt}{1ex} &\multicolumn{2}{l}{
+    \footnotesize{$\bullet$ Led development of iOS/Android app with about 1.5 million downloads, a 4.9 star average rating  and thousands of daily users.}}\\ 
+
+\end{tabularx}
+
+%Section: Work Experience at the top
+
+\section{Education}
+\begin{tabularx}{\textwidth}{r|Xr}
+ \textsc{2018 - 2021} & M.S. in Computer Science & \emph{University of Minnesota}\\
+  \rule{0pt}{1ex} 
+	&\multicolumn{2}{l}{\footnotesize{\textbf{Thesis: } Disentangling the Octopus: Towards Decomposing Reinforcement Learning Systems in to Intuitive Subsystems} \linkbox{\link{https://conservancy.umn.edu/bitstream/handle/11299/223101/Blum_umn_0130M_22210.pdf}{PDF}}}\\
+    &\multicolumn{2}{l}{\footnotesize{$\bullet$ \textbf{3.91 /4.0 GPA} $\cquad\bullet$ Research at UMN AI, Vision \& Robotics Lab}}\\
+  \multicolumn{2}{c}{}\\
+  
+  
+\textsc{2015 - 2018} & Bachelor of Arts, Science & \emph{University of Minnesota} \\
+\rule{0pt}{1.2ex} &\multicolumn{2}{l}{
+    \footnotesize{$\bullet$ \textbf{3.71 / 4.0 GPA} $\cquad\bullet$ \textbf{Majors} : Computer Science,  Mathematics, Chinese (Asian Languages and Literature)} \quad [\textit{Triple Major}]}
+\end{tabularx}
+
+
+\section{Research}
+\begin{tabularx}{\textwidth}{r|Xr}
+
+\textsc{2022} & LLM Adversarial Perturbation Robustness  \linkbox{\link{Lorem Ipsum}{ArXiV}}& \emph{Bloomberg L.P.}\\
+ & \multicolumn{2}{l}{
+    \footnotesize{\textbf{Don't Retrain, Just Rewrite: Countering Adversarial Perturbations by Rewriting Text} (Accepted at ACL 2023)}}\\ 
+& \multicolumn{2}{l}{
+    \footnotesize{\textit{Ashim Gupta, \textbf{Carter Blum}, Temma Choji, Yingjie Fei, Shalin Shah, Vivek Srikumar, Alakananda Vempala}}}\\
+\multicolumn{2}{c}{}\\
+
+\textsc{2020 - 2021} & Syndicate Consensus Algorithm \linkbox{\link{https://github.com/blumx116/VotingIsAllYouNeed}{Code}}& \emph{University of Minnesota}\\
+ & \multicolumn{2}{l}{
+    \footnotesize{$\bullet$ Devised mechanism for group consensus by incentivizing participants to correctly estimate the value of proposals.}}\\ 
+& \multicolumn{2}{l}{
+    \footnotesize{$\bullet$ Kickstarted, coordinated \& led group to design and implement intuitive user experience for new app.}}\\
+\multicolumn{2}{c}{}\\
+
+
+\textsc{2019} & Applied Distributable Reinforcement Learning \linkbox{\link{https://arxiv.org/pdf/2102.00847.pdf}{ArXiV}}& \emph{Baidu Inc.}\\
+ & \multicolumn{2}{l}{
+    \footnotesize{\textbf{CoordiQ: Coordinated Q-learning for Electric Vehicle Charging Recommendation -- new text} (PrePrint)}}\\ 
+& \multicolumn{2}{l}{
+    \footnotesize{\textit{\textbf{Carter Blum}, Liu Hao, Hui Xiong}}}\\
+\multicolumn{2}{c}{}\\
+
+%\textsc{2018 - 2019} & Shapelets Classification \linkbox{\link{https://github.com/blumx116/ShapeletsRefactored}{Code}} & \emph{Maria Gini's Lab - University of Minnesota}\\
+%\rule{0pt}{1ex} &\multicolumn{2}{l}{
+%    \footnotesize{$\bullet$ Accelerated experiment run time by 40x $\cquad\bullet$ Increased accuracy on timeseries (audio) data in >100 domains by up to 30\%}}\\
+%\multicolumn{2}{c}{}\\
+%\textsc{2018 - 2020} & Other Selected Projects & \emph{University of Minnesota}\\
+%\rule{0pt}{1ex} &\multicolumn{2}{l}{
+%    \footnotesize{$\bullet$ Like a Light Switch: Conditional Weights for Deep Meta-Learning \linkbox{\link{https://blumx116.github.io/assets/pdfs/MaskedMeta.pdf}{PDF}} \footnotesize $\cquad\bullet$ Scene Prediction in RL using GANs \linkbox{\link{https://blumx116.github.io/assets/pdfs/GAN_Scene_Prediction.pdf}{PDF}}}}\\
+\end{tabularx}
+\section{Selected Technical Skills}
+% \textbf{Spoken Language:} & Mandarin Chinese (Proficient), Public Speaking (Spoken bilingually for groups of 2,000)\\
+\textbf{Key Technologies:} Pytorch, Pandas, KServe/Kubernetes(K8s), Spark, Tensorboard, Plotly, Flutter, Python, JS, C++, Langchain, Huggingface Transformers, Pytorch Lightning, DeepSpeed, AWS S3, Streamlit, Gradio, JAX, Grafana, Humio, Splunk, Docker,\\
+% \textbf{Soft Skills:} & Creativity, Adaptability, Persistence, Presentation Ability\\
+\end{document}
